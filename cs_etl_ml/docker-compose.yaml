@@ -1,0 +1,88 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: cs_etl_postgres
+    environment:
+      POSTGRES_USER: etl_user
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: etl_db
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U etl_user -d etl_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+  airflow-init:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: cs_etl_airflow_init
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://etl_user:${POSTGRES_PASSWORD}@postgres:5432/airflow
+    command: db migrate
+
+  
+  airflow:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: cs_etl_airflow
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://etl_user:${POSTGRES_PASSWORD}@postgres:5432/airflow
+      APP_DATABASE_URL: postgresql+psycopg2://etl_user:${POSTGRES_PASSWORD}@postgres:5432/etl_db
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./src:/opt/airflow/src
+      - ./models:/opt/airflow/models
+    ports:
+      - "8080:8080"
+    command: webserver
+    restart: unless-stopped
+
+
+
+  airflow-scheduler:
+    build:
+      context: .
+      dockerfile: Dockerfile.airflow
+    container_name: cs_etl_airflow_scheduler
+    depends_on:
+      postgres:
+        condition: service_healthy
+      airflow-init:
+        condition: service_completed_successfully
+    environment:
+      AIRFLOW_HOME: /opt/airflow
+      AIRFLOW__CORE__EXECUTOR: SequentialExecutor
+      AIRFLOW__DATABASE__SQL_ALCHEMY_CONN: postgresql+psycopg2://etl_user:${POSTGRES_PASSWORD}@postgres:5432/airflow
+      APP_DATABASE_URL: postgresql+psycopg2://etl_user:${POSTGRES_PASSWORD}@postgres:5432/etl_db
+      AIRFLOW__CORE__LOAD_EXAMPLES: "false"
+    volumes:
+      - ./dags:/opt/airflow/dags
+      - ./logs:/opt/airflow/logs
+      - ./plugins:/opt/airflow/plugins
+      - ./data:/opt/airflow/data
+      - ./src:/opt/airflow/src
+      - ./models:/opt/airflow/models
+    command: scheduler
+    restart: unless-stopped
+volumes:
+  postgres_data:

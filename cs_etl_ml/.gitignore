@@ -1,0 +1,27 @@
+﻿# Secrets and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Airflow logs and Python cache
+logs/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Python environments
+.venv/
+venv/
+env/
+
+# Local database and temporary files
+*.sqlite
+*.db
+.DS_Store
+Thumbs.db
+
+# Retail datasets and generated outputs
+data/*.csv
+data/*.txt
