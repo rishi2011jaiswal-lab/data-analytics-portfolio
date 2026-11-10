@@ -53,16 +53,16 @@ The project uses customer transaction and offer-related data to build an interac
 
 ### Offer Funnel
 
-![Offer Funnel](Images/Offer_Funnel.png)
+![Offer_Funnel](Images/Offer_Funnel.png)
 
 ### Customer Segmentation
 
-![Customer Segmentation](Images/Customer_Segmentation.png)
+![Customer_Segmentation](Images/Customer_Segmentation.png)
 
 
 ### Offer Performance
 
-![Offer Performance](Images/Offer_Performance.png)
+![Offer_Performance](Images/Offer_Performance.png)
 
 ## 💡 Business Value
 
