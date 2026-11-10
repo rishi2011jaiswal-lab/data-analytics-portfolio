@@ -1,76 +1,26 @@
-# Customer Offer Engagement Analysis
+# Power BI Capstone Project
 
-## 📊 Project Overview
+This folder contains my Power BI capstone project, focused on customer engagement and marketing offer performance.
 
-This project focuses on analyzing customer engagement with marketing offers using Power BI.
+## Featured Project
 
-The objective is to understand customer behavior, evaluate offer performance, identify customer segments, and generate insights that can help improve marketing campaign effectiveness.
+### Customer Offer Engagement Dashboard
 
-The project uses customer transaction and offer-related data to build an interactive business intelligence dashboard.
+An interactive Power BI dashboard analyzing customer behavior, marketing offer performance, redemption patterns, and transaction activity.
 
-## 🎯 Business Objectives
+**Key analysis areas:**
+- Customer segmentation
+- Offer redemption and completion
+- Marketing channel effectiveness
+- Customer spending behavior
+- Offer performance analysis
 
-- Understand customer engagement with marketing offers.
-- Analyze customer purchasing behavior.
-- Identify customer segments and their engagement patterns.
-- Evaluate offer performance.
-- Support data-driven marketing decisions.
+**Tools:** Power BI, Power Query, DAX, Data Modeling
 
-## 🛠️ Tools & Technologies
+[**View the Complete Project, Dashboard Screenshots, and Insights →**](./Customer_Offer_Engagement_Dashboard/README.md)
 
-- Microsoft Power BI
-- Power Query
-- DAX
-- Microsoft Excel
-- Data Visualization
-- Data Cleaning and Transformation
-
-## 📁 Project Structure
+## Project Files
 
 | Folder | Description |
 |---|---|
-| Documentation | Project documentation and supporting information |
-| Images | Dashboard screenshots and visualizations |
-| PBIX | Power BI report file |
-| source_file | Source datasets used for analysis |
-
-## 📈 Key Analysis Areas
-
-- Customer Segmentation
-- Customer Engagement Analysis
-- Offer Performance Analysis
-- Transaction Analysis
-- Marketing Performance
-
-## 📊 Dashboard Preview
-
-### Executive Overview
-
-![Executive Overview](Customer_Offer_Engagement_Dashboard/Images/Executive_Overview.png)
-
-### Offer Funnel
-
-![Offer_Funnel](Customer_Offer_Engagement_Dashboard/Images/Offer_Funnel.png)
-
-### Customer Segmentation
-
-![Customer_Segmentation](Customer_Offer_Engagement_Dashboard/Images/Customer_Segmentation.png)
-
-
-### Offer Performance
-
-![Offer_Performance](Customer_Offer_Engagement_Dashboard/Images/Offer_Performance.png)
-
-## 💡 Business Value
-
-This analysis can help businesses understand customer engagement, evaluate marketing offers, identify customer segments, and make better decisions about marketing campaigns.
-
-## 👨‍💻 Author
-
-Rishi Kumar Jaiswal
-
-Senior SEO & Data Analyst | Aspiring Data Analyst
-
-[GitHub Portfolio](https://github.com/rishi2011jaiswal-lab/data-analytics-portfolio)
-
-[LinkedIn](https://www.linkedin.com/in/rishi-kumar-jaiswal)
+| `Customer_Offer_Engagement_Dashboard` | Detailed project documentation and dashboard |
