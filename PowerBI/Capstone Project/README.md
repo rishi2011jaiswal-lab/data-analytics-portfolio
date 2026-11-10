@@ -57,7 +57,7 @@ The project uses customer transaction and offer-related data to build an interac
 
 ### Customer Segmentation
 
-![Customer_Segmentation](Images/Customer_Segmentation.png)
+![Customer_Segmentation](Customer_Offer_Engagement_Dashboard/Images/Customer_Segmentation.png)
 
 
 ### Offer Performance
