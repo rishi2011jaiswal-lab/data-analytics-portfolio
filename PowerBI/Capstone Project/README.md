@@ -44,9 +44,6 @@ The project uses customer transaction and offer-related data to build an interac
 
 ## 📊 Dashboard Preview
 
-
-## 📊 Dashboard Preview
-
 ### Executive Overview
 
 ![Executive Overview](Customer_Offer_Engagement_Dashboard/Images/Executive_Overview.png)
