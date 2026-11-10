@@ -57,7 +57,8 @@ The project uses customer transaction and offer-related data to build an interac
 
 ### Customer Segmentation
 
-![Customer Segmentation](Images/Customer_Segmentation.png)
+![Customer Segmentation](PowerBI/Capstone Project/Customer_Offer_Engagement_Dashboard/Images/Customer_Segmentation.png)
+
 
 ### Offer Performance
 
