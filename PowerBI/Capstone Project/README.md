@@ -48,19 +48,20 @@ The project uses customer transaction and offer-related data to build an interac
 ## 📊 Dashboard Preview
 
 ### Executive Overview
-![Executive Overview](./Images/Executive_Overview.png)
 
-### Customer Segmentation
-![Customer Segmentation](./Images/Customer_Segmentation.png)
-
-### Offer Performance
-![Offer Performance](./Images/Offer_Performance.png)
+![Executive Overview](Images/Executive_Overview.png)
 
 ### Offer Funnel
-![Offer Funnel](./Images/Offer_Funnel.png)
 
-### Transaction Analysis
-![Transaction Analysis](./Images/Transaction_Analysis.png)
+![Offer Funnel](Images/Offer_Funnel.png)
+
+### Customer Segmentation
+
+![Customer Segmentation](Images/Customer_Segmentation.png)
+
+### Offer Performance
+
+![Offer Performance](Images/Offer_Performance.png)
 
 ## 💡 Business Value
 
