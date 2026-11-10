@@ -48,19 +48,19 @@ The project uses customer transaction and offer-related data to build an interac
 ## 📊 Dashboard Preview
 
 ### Executive Overview
-![Executive Overview](PowerBI/Capstone Project/Customer_Offer_Engagement_Dashboard/Images/Customer Segmentation.png)
+![Executive Overview](./Images/Executive%20Overview.png)
 
 ### Customer Segmentation
-![Customer Segmentation](PowerBI/Capstone Project/Customer_Offer_Engagement_Dashboard/Images/Executive Overview.png)
+![Customer Segmentation](./Images/Customer%20Segmentation.png)
 
 ### Offer Performance
-![Offer Performance](PowerBI/Capstone Project/Customer_Offer_Engagement_Dashboard/Images/Offer Funnel.png)
+![Offer Performance](./Images/Offer%20Performance.png)
 
 ### Offer Funnel
-![Offer Funnel](PowerBI/Capstone Project/Customer_Offer_Engagement_Dashboard/Images/Offer Funnel.png)
+![Offer Funnel](./Images/Offer%20Funnel.png)
 
 ### Transaction Analysis
-![Transaction Analysis](Images/Transaction%20Analysis.png)
+![Transaction Analysis](./Images/Transaction%20Analysis.png)
 
 ## 💡 Business Value
 
