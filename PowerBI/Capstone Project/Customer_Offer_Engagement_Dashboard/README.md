@@ -83,20 +83,20 @@ Compares spending patterns of customers who completed offers versus those who di
 
 ### Executive Overview
 
-![Executive Overview](Images/Executive%20Overview.png)
+![Executive Overview](Images/Executive_Overview.png)
 
 ### Offer Funnel
 
-![Offer Funnel](Images/Offer%20Funnel.png)
+![Offer Funnel](Images/Offer_Funnel.png)
 
 ### Customer Segmentation
 
-![Customer Segmentation](Images/Customer%20Segmentation.png)
+![Customer Segmentation](Images/Customer_Segmentation.png)
 
 ### Offer Performance
 
-![Offer Performance](Images/Offer%20Performance.png)
+![Offer Performance](Images/Offer_Performance.png)
 
 ### Transaction Analysis
 
-![Transaction Analysis](Images/Transaction%20Analysis.png)
+![Transaction Analysis](Images/Transaction_Analysis.png)
